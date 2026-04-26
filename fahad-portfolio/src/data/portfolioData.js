@@ -95,6 +95,16 @@ export const personalProjects = [
     github: "https://github.com/Fahad1110136",
     icon: "🛡️",
     color: "#ef4444",
+  }, 
+  {
+    title: "Developer Portfolio",
+    subtitle: "React.js · Responsive Design · Personal Branding",
+    description: "A fully responsive personal portfolio website crafted to showcase projects, skills, and professional identity. Built with React.js, the site features a clean, modern aesthetic with smooth navigational transitions, structured sections for education, experience, projects, and achievements, and a design philosophy centred on clarity and impact. Deployed on Netlify with a live domain, it serves as both a technical exhibit and a personal brand statement — engineered to make a lasting first impression.",
+    tech: ["React.js", "JavaScript", "CSS3", "Responsive Design", "Netlify"],
+    github: "https://github.com/Fahad1110136",
+    live: "https://muhammadfahadidrees.netlify.app",
+    icon: "💻",
+    color: "#8b5cf6",
   }
 ];
 
