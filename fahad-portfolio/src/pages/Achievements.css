@@ -1,0 +1,94 @@
+.ach__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+}
+
+.ach__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.ach__card:hover .ach__icon {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+.ach__card:hover .ach__icon-glow {
+  opacity: 1;
+}
+
+.ach__icon-wrap {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(34,197,94,0.07);
+  border: 1px solid rgba(34,197,94,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ach__icon {
+  font-size: 2rem;
+  display: block;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.ach__icon-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle, rgba(34,197,94,0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ach__body {
+  flex: 1;
+}
+
+.ach__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.ach__detail {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--accent-primary);
+}
+
+.ach__accent-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-primary), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.ach__card:hover .ach__accent-line {
+  transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+  .ach__grid { grid-template-columns: 1fr; }
+}
