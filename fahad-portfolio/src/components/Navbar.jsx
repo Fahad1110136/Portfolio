@@ -24,6 +24,7 @@ const Navbar = () => {
     { path: '/experience', label: 'Experience' },
     { path: '/academic-projects', label: 'Academic Projects' },
     { path: '/personal-projects', label: 'Personal Projects' },
+    { path: '/skills', label: 'Skills' },
     { path: '/achievements', label: 'Achievements' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -78,3 +79,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

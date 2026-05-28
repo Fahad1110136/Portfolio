@@ -253,7 +253,11 @@
   left: -10px;
   animation: float 6s ease-in-out infinite 2s;
 }
-
+.home__float-tag--4 {
+  top: 15%;
+  left: -20px;
+  animation: float 6s ease-in-out infinite 3s;
+}
 /* Contact Strip */
 .home__contact-strip {
   border-top: 1px solid var(--border-subtle);
@@ -367,7 +371,8 @@
 
   .home__float-tag--1,
   .home__float-tag--2,
-  .home__float-tag--3 {
+  .home__float-tag--3
+  .home__float-tag--4  {
     display: none;
   }
 }

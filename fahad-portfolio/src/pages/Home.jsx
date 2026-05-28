@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// ── UPDATED: Removed Link import — buttons now use smooth scroll anchors instead of routes
 import { personal } from '../data/portfolioData';
 import './Home.css';
+
+// ── ADDED: Helper to smooth-scroll to a section by ID
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    const top = el.getBoundingClientRect().top + window.scrollY - 70;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+};
 
 const TypewriterText = ({ texts }) => {
   const [displayText, setDisplayText] = useState('');
@@ -74,20 +83,21 @@ const Home = () => {
                 {personal.tagline}
               </p>
 
+              {/* ── UPDATED: Buttons now smooth-scroll to sections instead of routing */}
               <div className="home__actions animate-in" style={{ animationDelay: '0.65s' }}>
-                <Link to="/about" className="btn-solid">Explore My Work</Link>
-                <Link to="/contact" className="btn-glow">Get In Touch</Link>
+                <button className="btn-solid" onClick={() => scrollTo('about')}>Explore My Work</button>
+                <button className="btn-glow"  onClick={() => scrollTo('contact')}>Get In Touch</button>
               </div>
 
               {/* Quick stats */}
               <div className="home__stats animate-in" style={{ animationDelay: '0.8s' }}>
                 <div className="home__stat">
-                  <span className="home__stat-num">6+</span>
+                  <span className="home__stat-num">8+</span>
                   <span className="home__stat-label">Projects</span>
                 </div>
                 <div className="home__stat-divider" />
                 <div className="home__stat">
-                  <span className="home__stat-num">10+</span>
+                  <span className="home__stat-num">12+</span>
                   <span className="home__stat-label">Technologies</span>
                 </div>
               </div>
@@ -118,6 +128,9 @@ const Home = () => {
               </div>
               <div className="home__float-tag home__float-tag--3">
                 <span>🌐</span> Full Stack Dev
+              </div>
+              <div className="home__float-tag home__float-tag--4">
+                <span>🧩</span> Problem Solver
               </div>
             </div>
           </div>
@@ -166,8 +179,10 @@ const Home = () => {
               </div>
             </a>
 
+            {/* ── UPDATED: Email uses mailto: so clicking opens the default mail app / Gmail */}
             <a
-              href={`mailto:${personal.email}`}
+              //href={`mailto:${personal.email}`}
+              href= {`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}$`}
               className="home__contact-link"
             >
               <div className="home__contact-icon">
@@ -183,7 +198,7 @@ const Home = () => {
             </a>
 
             <a
-              href={`tel:${personal.phone}`}
+              href={`https://api.whatsapp.com/send?phone=923201480611`}
               className="home__contact-link"
             >
               <div className="home__contact-icon">
@@ -218,3 +233,4 @@ const Home = () => {
 };
 
 export default Home;
+

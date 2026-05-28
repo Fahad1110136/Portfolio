@@ -7,17 +7,11 @@ import Education from './pages/Education';
 import Experience from './pages/Experience';
 import AcademicProjects from './pages/AcademicProjects';
 import PersonalProjects from './pages/PersonalProjects';
+import Skills from './pages/Skills';          
 import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
 import './styles/global.css';
 
-const ScrollToTop = () => {
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-  return null;
-};
 
 function App() {
   return (
@@ -29,17 +23,42 @@ function App() {
         <div className="orb orb-2" />
 
         <Navbar />
-        <ScrollToTop />
 
+        {/*
+         * ── UPDATED: Single-page continuous scroll layout ──────────────────
+         * All sections are rendered stacked vertically on one page.
+         * Each section has an `id` that matches Navbar anchor links,
+         * so clicking a nav link smoothly scrolls to that section.
+         * The old multi-route approach is preserved as a fallback via Routes
+         * but the primary experience is this scroll layout on "/".
+         * ──────────────────────────────────────────────────────────────────
+         */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience />} />
+          {/* Single-page scroll — all sections on root */}
+          <Route path="/" element={
+            <div className="scroll-page">
+              <section id="home">    <Home />          </section>
+              <section id="about">   <About />         </section>
+              <section id="education"><Education />    </section>
+              <section id="experience"><Experience />  </section>
+              <section id="academic-projects"><AcademicProjects /></section>
+              <section id="personal-projects"><PersonalProjects /></section>
+              {/* ── ADDED: Skills section in scroll flow ── */}
+              <section id="skills">  <Skills />        </section>
+              <section id="achievements"><Achievements /></section>
+              <section id="contact"> <Contact />       </section>
+            </div>
+          } />
+
+          {/* Keep individual routes so direct URLs still work */}
+          <Route path="/about"             element={<About />} />
+          <Route path="/education"         element={<Education />} />
+          <Route path="/experience"        element={<Experience />} />
           <Route path="/academic-projects" element={<AcademicProjects />} />
           <Route path="/personal-projects" element={<PersonalProjects />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills"            element={<Skills />} />
+          <Route path="/achievements"      element={<Achievements />} />
+          <Route path="/contact"           element={<Contact />} />
         </Routes>
       </div>
     </Router>

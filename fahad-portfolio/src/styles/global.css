@@ -292,6 +292,24 @@ body::before {
   animation: fadeInUp 0.6s ease forwards;
 }
 
+/* ── ADDED: Single-page scroll layout container ──────────────────────────
+   Wraps all sections stacked vertically for the continuous scroll experience.
+   Each <section> inside gets a subtle top border to visually separate sections. */
+.scroll-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-page > section {
+  position: relative;
+}
+
+/* Subtle separator line between sections (except the first) */
+.scroll-page > section + section {
+  border-top: 1px solid var(--border-subtle);
+}
+/* ─────────────────────────────────────────────────────────────────────── */
+
 /* Responsive */
 @media (max-width: 768px) {
   .section { padding: 3rem 0; }
