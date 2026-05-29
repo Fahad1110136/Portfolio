@@ -119,11 +119,11 @@ export const personalProjects = [
 ];
 
 export const skills = {
-  Languages: ["C++", "C", "Python", "JavaScript", "SQL", "Bash", "Flutter"],
-  "Web Development": ["HTML5", "CSS3", "React.js", "Next.js", "Node.js", "REST APIs", "MERN Stack", "SQLite"],
-  "Systems & CS": ["Data Structures & Algorithms", "OOP", "Design Patterns", "Operating Systems", "Computer Networks", "x86 Assembly", "DBMS"],
-  "Data & AI": ["NumPy", "Pandas", "Matplotlib", "Machine Learning", "Model Training", "AI-based Design"],
-  "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "Postman", "MySQL", "Firebase", "MongoDB", "ChromaDB", "Prisma", "Streamlit"],
+  Languages: ["C++", "C", "Python", "SQL", "Java", "HTML"],
+  "Web Development": ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Node.js", "REST & FAST APIs", "MERN Stack", "SQLite"],
+  "Technical": ["Data Structures & Algorithms", "OOP", "Design Patterns", "Operating Systems", "Computer Networks", "x86 Assembly", "DBMS", "AI"],
+  "Data & AI/ML": ["NumPy", "Pandas", "Matplotlib", "Keras", "Sci-kit learn", "Tensorflow", "Machine Learning", "Model Training", "AI-based Design"],
+  "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "MySQL", "Firebase", "MongoDB", "ChromaDB", "Prisma", "Streamlit"],
 };
 
 export const achievements = [

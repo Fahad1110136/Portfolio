@@ -10,7 +10,7 @@ import './Skills.css';
 const categoryMeta = {
   'Languages':        { icon: '⌨️', color: '#22c55e' },
   'Web Development':  { icon: '🌐', color: '#2dd4bf' },
-  'Systems & CS':     { icon: '⚙️', color: '#f59e0b' },
+  'Technical':     { icon: '⚙️', color: '#f59e0b' },
   'Data & AI':        { icon: '🤖', color: '#6366f1' },
   'Tools & Platforms':{ icon: '🛠️', color: '#ef4444' },
 };

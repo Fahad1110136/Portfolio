@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Education from './pages/Education';
 import Experience from './pages/Experience';
+import Services from './pages/Services';
 import AcademicProjects from './pages/AcademicProjects';
 import PersonalProjects from './pages/PersonalProjects';
 import Skills from './pages/Skills';          
@@ -41,6 +42,7 @@ function App() {
               <section id="about">   <About />         </section>
               <section id="education"><Education />    </section>
               <section id="experience"><Experience />  </section>
+              <section id="services"><Services />      </section>
               <section id="academic-projects"><AcademicProjects /></section>
               <section id="personal-projects"><PersonalProjects /></section>
               {/* ── ADDED: Skills section in scroll flow ── */}
@@ -54,6 +56,7 @@ function App() {
           <Route path="/about"             element={<About />} />
           <Route path="/education"         element={<Education />} />
           <Route path="/experience"        element={<Experience />} />
+          <Route path="/services"          element={<Services />} />
           <Route path="/academic-projects" element={<AcademicProjects />} />
           <Route path="/personal-projects" element={<PersonalProjects />} />
           <Route path="/skills"            element={<Skills />} />
