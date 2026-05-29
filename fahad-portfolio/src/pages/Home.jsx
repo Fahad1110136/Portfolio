@@ -182,7 +182,7 @@ const Home = () => {
             {/* ── UPDATED: Email uses mailto: so clicking opens the default mail app / Gmail */}
             <a
               //href={`mailto:${personal.email}`}
-              href= {`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}$`}
+              href= {`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`}
               className="home__contact-link"
             >
               <div className="home__contact-icon">

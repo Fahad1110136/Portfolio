@@ -84,7 +84,7 @@ const Contact = () => {
     const targetPhone = "923201480611";
 
     const encryptedText =
-      `*Hi Fahad, you have recieved a new message from Portfolio Contact Form* 🚀%0A%0A` +
+      `*Hi Fahad, You have recieved a new message from Portfolio Contact Form* 🚀%0A%0A` +
       `*Name:* ${encodeURIComponent(formData.name)} %0A` +
       `*Phone:* ${encodeURIComponent(formData.phone)} %0A` +
       `*Email:* ${encodeURIComponent(formData.email)} %0A%0A` +
@@ -109,15 +109,15 @@ const handleEmailSend = (e) => {
     `Portfolio Contact: Message from ${formData.name}`
   );
   const body = encodeURIComponent(
-    `Hi Fahad,\n\nYou received a new message from portfolio contact form.\n\n` +
+    `Hi Fahad,\n\nYou have received a new message from Portfolio Contact Form\n\n` +
     `Name:    ${formData.name}\n` +
     `Phone:   ${formData.phone}\n` +
     `Email:   ${formData.email}\n\n` +
     `Message:\n${formData.message}\n\n`
   );
-
-  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
-  window.open(gmailUrl, '_blank');
+  window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`;
+  // const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+  // window.open(gmailUrl, '_blank');
 };
 // ── ENDS: Email send handler ──
 
