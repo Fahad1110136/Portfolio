@@ -115,9 +115,9 @@ const handleEmailSend = (e) => {
     `Email:   ${formData.email}\n\n` +
     `Message:\n${formData.message}\n\n`
   );
-  window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`;
-  // const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
-  // window.open(gmailUrl, '_blank');
+  // window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+  window.open(gmailUrl, '_blank');
 };
 // ── ENDS: Email send handler ──
 
@@ -251,6 +251,7 @@ const handleEmailSend = (e) => {
               <div className="contact__strip-body">
                 <p className="contact__strip-label">{item.label}</p>
                 <p className="contact__strip-value">{item.value}</p>
+                <p className="contact__strip-desc">{item.description}</p>
               </div>
             </a>
           ))}

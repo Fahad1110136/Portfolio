@@ -53,8 +53,10 @@ const TypewriterText = ({ texts }) => {
 const Home = () => {
   const roles = [
     'Full Stack Developer',
-    'C / C++ / Python Programmer',
+    'Python Enthusiast',
     'AI/ML Engineer',
+    'C/C++ Programmer',
+    'Problem Solver',
     'CS @ FAST-NUCES',
   ];
 
@@ -85,7 +87,7 @@ const Home = () => {
 
               {/* ── UPDATED: Buttons now smooth-scroll to sections instead of routing */}
               <div className="home__actions animate-in" style={{ animationDelay: '0.65s' }}>
-                <button className="btn-solid" onClick={() => scrollTo('about')}>Explore My Work</button>
+                <button className="btn-solid" onClick={() => scrollTo('academic-projects')}>Explore My Work</button>
                 <button className="btn-glow"  onClick={() => scrollTo('contact')}>Get In Touch</button>
               </div>
 
@@ -212,7 +214,23 @@ const Home = () => {
               </div>
             </a>
 
-            <div className="home__contact-link home__contact-link--static">
+            {/*<div className="home__contact-link home__contact-link--static">*/}
+              {/* <div className="home__contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div> */}
+              {/* <div>
+                <span className="home__contact-platform">Location</span>
+                <span className="home__contact-handle">Lahore, Pakistan</span>
+              </div> */}
+              <a
+              href="https://maps.google.com/?q=Samanabad+Lahore+Pakistan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home__contact-link"
+              >
               <div className="home__contact-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
@@ -221,9 +239,10 @@ const Home = () => {
               </div>
               <div>
                 <span className="home__contact-platform">Location</span>
-                <span className="home__contact-handle">Lahore, Pakistan</span>
+                <span className="home__contact-handle">Samanabad, Lahore, Pakistan</span>
               </div>
-            </div>
+              </a>
+            {/*</div>*/}
 
           </div>
         </div>

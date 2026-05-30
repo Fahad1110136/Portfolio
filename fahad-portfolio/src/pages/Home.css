@@ -342,14 +342,14 @@
 
 .home__contact-platform {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .home__contact-handle {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--text-primary);
   font-weight: 500;
   overflow: hidden;

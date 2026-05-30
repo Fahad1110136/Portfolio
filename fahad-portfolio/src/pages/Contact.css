@@ -398,3 +398,10 @@
     font-size: 1.4rem;
   }
 }
+
+.contact__strip-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+  opacity: 0.7;
+}
