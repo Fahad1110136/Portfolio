@@ -89,6 +89,7 @@ const Home = () => {
               <div className="home__actions animate-in" style={{ animationDelay: '0.65s' }}>
                 <button className="btn-solid" onClick={() => scrollTo('academic-projects')}>Explore My Work</button>
                 <button className="btn-glow"  onClick={() => scrollTo('contact')}>Get In Touch</button>
+                <button className="btn-solid" onClick={() => window.open('/Muhammad Fahad Idrees.pdf', '_blank')}>Download Resume</button>
               </div>
 
               {/* Quick stats */}
@@ -101,6 +102,11 @@ const Home = () => {
                 <div className="home__stat">
                   <span className="home__stat-num">12+</span>
                   <span className="home__stat-label">Technologies</span>
+                </div>
+                <div className="home__stat-divider" />
+                <div className="home__stat">
+                  <span className="home__stat-num">1+</span>
+                  <span className="home__stat-label">Internships</span>
                 </div>
               </div>
             </div>
@@ -226,7 +232,7 @@ const Home = () => {
                 <span className="home__contact-handle">Lahore, Pakistan</span>
               </div> */}
               <a
-              href="https://maps.google.com/?q=Samanabad+Lahore+Pakistan"
+              href="https://www.google.com/maps?q=31.535916,74.303854"
               target="_blank"
               rel="noopener noreferrer"
               className="home__contact-link"

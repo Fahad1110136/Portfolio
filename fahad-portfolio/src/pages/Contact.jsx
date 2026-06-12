@@ -58,7 +58,7 @@ const contactItems = [
     ),
     label: 'Location',
     value: personal.location,
-    href: 'https://maps.google.com/?q=Samanabad+Lahore+Pakistan',
+    href: 'https://www.google.com/maps?q=31.535916,74.303854',
     description: 'View on map',
     external: true,
   },

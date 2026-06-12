@@ -37,15 +37,25 @@ export const education = [
 
 export const experience = [
   {
+   role: "Full Stack Developer",
+   company: "NexCart — E-commerce Platform",
+   type: "Internship @ Optimus Automate",
+   period: "June 2026 - July 2026",
+   icon: "🛒",
+   description: "Built NexCart — a full stack, multi category e-commerce web application from the ground up during a Full Stack Developer internship. Engineered a complete online store experience covering product browsing with search, sorting, and filtering, Google OAuth and JWT based authentication, shopping cart, Stripe ready checkout and payments, order management with cancellation and email notifications, user profiles, and a full admin panel for product and order management. Implemented immersive UI with a Three.js 3D animated hero, Framer Motion page transitions, parallax sections, scroll triggered reveal animations, and skeleton loaders, all wrapped in a fully responsive, eco friendly design system.",
+   tech: ["React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Passport.js", "Google OAuth", "Stripe", "Three.js", "Framer Motion", "GSAP", "Tailwind CSS", "Cloudinary", "Nodemailer"],
+   github: "https://github.com/Fahad1110136/NexCart" 
+  },
+  {
     role: "Frontend Developer",
     company: "Elite Digital — Marketing Agency",
-    type: "Upwork Freelancer",
-    period: "2025",
+    type: "Freelancer @ Upwork",
+    period: "June 2025 - Aug 2025",
     icon: "💼",
     description: "Designed and engineered a fully responsive digital marketing agency website from the ground up using pure HTML5 and CSS3 — zero frameworks, pure craft. Delivered a conversion-focused landing page featuring service offerings, client value propositions, and a polished contact section with contemporary agency-style branding. Implemented responsive layouts using CSS Grid and Flexbox, smooth navigational transitions, and strategically placed calls-to-action, all optimised for real-world usability and client conversion.",
     tech: ["HTML5", "CSS3", "CSS Grid", "Flexbox", "Responsive Design"],
     github: "https://github.com/Fahad1110136/EliteDigital_Frontend"
-  },
+  }
 ];
 
 export const academicProjects = [
@@ -115,7 +125,16 @@ export const personalProjects = [
     live: "https://muhammadfahadidrees.netlify.app",
     icon: "💻",
     color: "#8b5cf6",
-  }
+  },
+  {
+  title: "NexCart — Beyond the Store",
+  subtitle: "Full Stack · E-Commerce · MERN",
+  description: "A full stack, multi-category e-commerce web application built during a Full Stack Developer internship at Optimus Automate. Engineered a complete online store covering product browsing with search, sorting, and filtering, Google OAuth and JWT-based authentication, shopping cart, Stripe-ready checkout and payments, order management with cancellation and transactional email notifications, user profiles with wishlist, and a full admin panel for product and order management. Implements a Three.js 3D animated hero, Framer Motion page transitions, parallax sections, scroll-triggered reveal animations, and skeleton loaders — wrapped in a fully responsive eco-friendly design system built with CSS custom properties.",
+  tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Passport.js", "Google OAuth", "Stripe", "Three.js", "Framer Motion", "GSAP", "Tailwind CSS", "Cloudinary", "Nodemailer"],
+  github: "https://github.com/Fahad1110136/NexCart",
+  icon: "🛒",
+  color: "#10b981",
+ }
 ];
 
 export const skills = {
