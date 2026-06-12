@@ -89,7 +89,7 @@ const Home = () => {
               <div className="home__actions animate-in" style={{ animationDelay: '0.65s' }}>
                 <button className="btn-solid" onClick={() => scrollTo('academic-projects')}>Explore My Work</button>
                 <button className="btn-glow"  onClick={() => scrollTo('contact')}>Get In Touch</button>
-                <button className="btn-solid" onClick={() => window.open('/Muhammad Fahad Idrees.pdf', '_blank')}>Download Resume</button>
+                <button className="btn-solid" onClick={() => window.open('/Muhammad_Fahad_Idrees.pdf', '_blank')}>Download Resume</button>
               </div>
 
               {/* Quick stats */}
