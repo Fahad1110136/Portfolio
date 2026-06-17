@@ -1,12 +1,7 @@
-// ── ADDED: Skills page — new section added to portfolio
-// Interactive skill display with category tabs and animated skill bars,
-// fully matching the existing eco-dark green theme.
-
 import React, { useState } from 'react';
 import { skills } from '../data/portfolioData';
 import './Skills.css';
 
-// ── ADDED: Category icon map for visual flair per skill group
 const categoryMeta = {
   'Languages':        { icon: '⌨️', color: '#22c55e' },
   'Web Development':  { icon: '🌐', color: '#2dd4bf' },
@@ -16,7 +11,6 @@ const categoryMeta = {
 };
 
 const Skills = () => {
-  // ── ADDED: Active category tab state — defaults to first category
   const categories = Object.keys(skills);
   const [activeCategory, setActiveCategory] = useState(categories[0]);
 
@@ -30,7 +24,6 @@ const Skills = () => {
         <h1 className="section-heading">Skills</h1>
         <div className="section-divider" />
 
-        {/* ── ADDED: Category tab bar — click to switch skill group */}
         <div className="skills__tabs">
           {categories.map((cat) => {
             const m = categoryMeta[cat] || { icon: '💡', color: '#22c55e' };
@@ -48,7 +41,6 @@ const Skills = () => {
           })}
         </div>
 
-        {/* ── ADDED: Skills display panel — animates on category change */}
         <div className="skills__panel card">
           {/* Panel header */}
           <div className="skills__panel-header">
@@ -66,7 +58,6 @@ const Skills = () => {
             </span>
           </div>
 
-          {/* ── ADDED: Skill chips — each chip has a hover glow using the category color */}
           <div className="skills__chips">
             {activeSkills.map((skill, i) => (
               <div
@@ -84,7 +75,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* ── ADDED: Summary row — total skill count across all categories */}
         <div className="skills__summary">
           {categories.map((cat) => {
             const m = categoryMeta[cat] || { icon: '💡', color: '#22c55e' };

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// ── UPDATED: Removed Link import — buttons now use smooth scroll anchors instead of routes
 import { personal } from '../data/portfolioData';
 import './Home.css';
 
-// ── ADDED: Helper to smooth-scroll to a section by ID
 const scrollTo = (id) => {
   const el = document.getElementById(id);
   if (el) {
@@ -85,14 +83,12 @@ const Home = () => {
                 {personal.tagline}
               </p>
 
-              {/* ── UPDATED: Buttons now smooth-scroll to sections instead of routing */}
               <div className="home__actions animate-in" style={{ animationDelay: '0.65s' }}>
                 <button className="btn-solid" onClick={() => scrollTo('academic-projects')}>Explore My Work</button>
                 <button className="btn-glow"  onClick={() => scrollTo('contact')}>Get In Touch</button>
                 <button className="btn-solid" onClick={() => window.open('/Muhammad_Fahad_Idrees.pdf', '_blank')}>Download Resume</button>
               </div>
 
-              {/* Quick stats */}
               <div className="home__stats animate-in" style={{ animationDelay: '0.8s' }}>
                 <div className="home__stat">
                   <span className="home__stat-num">8+</span>
@@ -111,7 +107,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right: Photo */}
             <div className="home__photo-section animate-in" style={{ animationDelay: '0.4s' }}>
               <div className="home__photo-frame">
                 <img
@@ -127,7 +122,6 @@ const Home = () => {
                 <div className="home__photo-corner home__photo-corner--br" />
               </div>
 
-              {/* Floating tech tags */}
               <div className="home__float-tag home__float-tag--1">
                 <span>⚙️</span> C++ / C / Python
               </div>
@@ -145,7 +139,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Contact Strip at Bottom */}
       <div className="home__contact-strip" id="contact-strip">
         <div className="container">
           <p className="home__contact-strip-title">
@@ -187,9 +180,7 @@ const Home = () => {
               </div>
             </a>
 
-            {/* ── UPDATED: Email uses mailto: so clicking opens the default mail app / Gmail */}
             <a
-              //href={`mailto:${personal.email}`}
               href= {`https://mail.google.com/mail/?view=cm&fs=1&to=${personal.email}`}
               className="home__contact-link"
             >
@@ -219,18 +210,6 @@ const Home = () => {
                 <span className="home__contact-handle">+92 320 1480611</span>
               </div>
             </a>
-
-            {/*<div className="home__contact-link home__contact-link--static">*/}
-              {/* <div className="home__contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-              </div> */}
-              {/* <div>
-                <span className="home__contact-platform">Location</span>
-                <span className="home__contact-handle">Lahore, Pakistan</span>
-              </div> */}
               <a
               href="https://www.google.com/maps?q=31.535916,74.303854"
               target="_blank"
@@ -248,7 +227,6 @@ const Home = () => {
                 <span className="home__contact-handle">Samanabad, Lahore, Pakistan</span>
               </div>
               </a>
-            {/*</div>*/}
 
           </div>
         </div>
@@ -258,4 +236,3 @@ const Home = () => {
 };
 
 export default Home;
-

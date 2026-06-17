@@ -18,7 +18,7 @@ const PersonalProjects = () => {
         </p>
         <div className="projects__list">
           {personalProjects.map((project, i) => (
-            <ProjectCard key={project.title} project={project} index={i} />
+            <ProjectCard key={project.title} experience={project} index={i} />
           ))}
         </div>
 

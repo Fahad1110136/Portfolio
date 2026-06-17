@@ -94,11 +94,9 @@ const Contact = () => {
     window.open(whatsappUrl, '_blank');
   };
 
-  // ── STARTS: Email send handler (opens Gmail compose in new tab) ──
 const handleEmailSend = (e) => {
   e.preventDefault();
 
-  // Validate fields manually (since type="button" skips native form validation)
   if (!formData.name || !formData.phone || !formData.email || !formData.message) {
     alert('Please fill in all fields before sending.');
     return;
@@ -115,11 +113,9 @@ const handleEmailSend = (e) => {
     `Email:   ${formData.email}\n\n` +
     `Message:\n${formData.message}\n\n`
   );
-  // window.location.href = `mailto:${personal.email}?subject=${subject}&body=${body}`;
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
   window.open(gmailUrl, '_blank');
 };
-// ── ENDS: Email send handler ──
 
   return (
     <div className="page-wrapper">
@@ -129,7 +125,6 @@ const handleEmailSend = (e) => {
         <div className="section-divider" />
 
         <div className="contact__layout">
-          {/* Left column — intro only, cards moved below */}
           <div className="contact__intro">
             <h2 className="contact__intro-title">Let's build something together.</h2>
             <p className="contact__intro-text">
@@ -143,7 +138,6 @@ const handleEmailSend = (e) => {
             </div>
           </div>
 
-          {/* Right column — contact form */}
           <div className="contact__form-container">
             <div className="contact__form-wrapper">
               <div className="contact__form-header">
@@ -204,7 +198,6 @@ const handleEmailSend = (e) => {
                   ></textarea>
                 </div>
 
-                {/* ── STARTS: Dual send buttons row ── */}
                 <div className="contact__submit-row">
                   <button
                     type="submit"
@@ -229,14 +222,12 @@ const handleEmailSend = (e) => {
                     <span>Send via Email</span>
                   </button>
                 </div>
-                {/* ── ENDS: Dual send buttons row ── */}
 
               </form>
             </div>
           </div>
         </div>
 
-        {/* ── STARTS: Horizontal contact cards strip below layout ── */}
         <div className="contact__cards-strip">
           {contactItems.map((item, i) => (
             <a
@@ -256,7 +247,6 @@ const handleEmailSend = (e) => {
             </a>
           ))}
         </div>
-        {/* ── ENDS: Horizontal contact cards strip below layout ── */}
 
       </div>
     </div>

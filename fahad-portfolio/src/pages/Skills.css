@@ -1,7 +1,3 @@
-/* ── ADDED: Skills.css — styles for the interactive Skills section
-   Design matches the eco-dark green theme of the rest of the portfolio. */
-
-/* ── Tab bar ─────────────────────────────────────────────────────────── */
 .skills__tabs {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +27,6 @@
   background: var(--bg-card-hover);
 }
 
-/* ── ADDED: Active tab uses per-category color via CSS variable */
 .skills__tab--active {
   border-color: var(--tab-color, var(--accent-primary));
   color: var(--tab-color, var(--accent-primary));
@@ -47,7 +42,7 @@
   white-space: nowrap;
 }
 
-/* ── Panel ────────────────────────────────────────────────────────────── */
+
 .skills__panel {
   padding: 2.5rem;
   margin-bottom: 2rem;
@@ -63,7 +58,6 @@
   border-bottom: 1px solid var(--border-subtle);
 }
 
-/* ── ADDED: Panel icon with per-category color glow */
 .skills__panel-icon {
   font-size: 2.2rem;
   width: 60px;
@@ -113,14 +107,12 @@
   color: var(--text-muted);
 }
 
-/* ── Skill chips ──────────────────────────────────────────────────────── */
 .skills__chips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-/* ── ADDED: Individual skill chip with per-category color on hover */
 .skills__chip {
   display: inline-flex;
   align-items: center;
@@ -135,7 +127,7 @@
   cursor: default;
   transition: all 0.2s ease;
   animation: fadeInUp 0.4s ease forwards;
-  opacity: 0; /* animated in */
+  opacity: 0;
 }
 
 .skills__chip:hover {
@@ -146,7 +138,6 @@
   box-shadow: 0 4px 14px color-mix(in srgb, var(--chip-color, #22c55e) 20%, transparent);
 }
 
-/* ── ADDED: Small colored dot inside each chip */
 .skills__chip-dot {
   width: 5px;
   height: 5px;
@@ -161,8 +152,6 @@
   opacity: 1;
 }
 
-/* ── Summary row ──────────────────────────────────────────────────────── */
-/* ── ADDED: Clickable category count summary at the bottom of Skills */
 .skills__summary {
   display: flex;
   flex-wrap: wrap;
@@ -221,7 +210,6 @@
   text-align: center;
 }
 
-/* ── Responsive ────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .skills__tabs {
     gap: 0.4rem;

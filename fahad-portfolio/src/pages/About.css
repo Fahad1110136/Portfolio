@@ -1,110 +1,3 @@
-/* .about__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.about__bio {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.about__bio-header {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.about__avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(34,197,94,0.15), rgba(34,197,94,0.05));
-  border: 1px solid rgba(34,197,94,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--accent-primary);
-  flex-shrink: 0;
-}
-
-.about__name {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-  margin-bottom: 0.2rem;
-}
-
-.about__title {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent-primary);
-  letter-spacing: 0.08em;
-}
-
-.about__text {
-  font-size: 0.95rem;
-  line-height: 1.85;
-  color: var(--text-secondary);
-}
-
-.about__interests-label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-}
-
-.about__interests-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-/* Skills 
-.about__skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.about__skill-card {
-  animation: fadeInUp 0.5s ease forwards;
-  opacity: 0;
-}
-
-.about__skill-category {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent-primary);
-  margin-bottom: 0.85rem;
-}
-
-.about__skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-@media (max-width: 900px) {
-  .about__grid {
-    grid-template-columns: 1fr;
-  }
-} */
-
-
-/* Changed from a 2-column grid to a full-width container wrapper */
 .about__container {
   width: 100%;
   display: flex;
@@ -116,7 +9,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 100%; /* Ensures the card stretches across the container */
+  width: 100%; 
 }
 
 .about__bio-header {
@@ -161,7 +54,7 @@
   font-size: 0.95rem;
   line-height: 1.85;
   color: var(--text-secondary);
-  text-align: justify; /* Optional: Makes long blocks of paragraph text look cleaner when full width */
+  text-align: justify; 
 }
 
 .about__interests-label {

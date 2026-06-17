@@ -219,7 +219,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA Strip */}
         <div className="services__cta">
           <div className="services__cta-text">
             <h2 className="services__cta-heading">Have a project in mind or Any service you want ?</h2>
@@ -227,12 +226,7 @@ const Services = () => {
               Whether it's a full product build or a specific feature — let's talk.
             </p>
           </div>
-          {/* <a href="mailto:fahadidrees1110136@gmail.com" className="btn-solid services__cta-btn">
-            Get In Touch
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a> */}
+      
           <button
             className="btn-solid services__cta-btn"
             onClick={() => navigate('/contact')}

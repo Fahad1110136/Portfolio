@@ -45,7 +45,6 @@
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* ── Form container ── */
 .contact__form-container {
   width: 100%;
 }
@@ -124,7 +123,6 @@
   resize: vertical;
 }
 
-/* ── STARTS: Dual submit buttons row ── */
 .contact__submit-row {
   display: flex;
   gap: 0.85rem;
@@ -177,9 +175,7 @@
     flex-direction: column;
   }
 }
-/* ── ENDS: Dual submit buttons row ── */
 
-/* ── STARTS: Horizontal contact cards strip ── */
 .contact__cards-strip {
   display: flex;
   flex-wrap: wrap;
@@ -268,9 +264,7 @@
     min-width: 100%;
   }
 }
-/* ── ENDS: Horizontal contact cards strip ── */
 
-/* ── Responsive layout ── */
 @media (max-width: 900px) {
   .contact__layout {
     grid-template-columns: 1fr;
@@ -287,7 +281,7 @@
   }
 }
 
-/* ── Legacy home form styles (kept for Home page if used) ── */
+
 .home__form-section {
   padding: 4rem 0;
   background: linear-gradient(to bottom, transparent, rgba(13, 20, 16, 0.4));
