@@ -25,17 +25,7 @@ function App() {
 
         <Navbar />
 
-        {/*
-         * ── UPDATED: Single-page continuous scroll layout ──────────────────
-         * All sections are rendered stacked vertically on one page.
-         * Each section has an `id` that matches Navbar anchor links,
-         * so clicking a nav link smoothly scrolls to that section.
-         * The old multi-route approach is preserved as a fallback via Routes
-         * but the primary experience is this scroll layout on "/".
-         * ──────────────────────────────────────────────────────────────────
-         */}
         <Routes>
-          {/* Single-page scroll — all sections on root */}
           <Route path="/" element={
             <div className="scroll-page">
               <section id="home">    <Home />          </section>
@@ -45,14 +35,12 @@ function App() {
               <section id="services"><Services />      </section>
               <section id="academic-projects"><AcademicProjects /></section>
               <section id="personal-projects"><PersonalProjects /></section>
-              {/* ── ADDED: Skills section in scroll flow ── */}
               <section id="skills">  <Skills />        </section>
               <section id="achievements"><Achievements /></section>
               <section id="contact"> <Contact />       </section>
             </div>
           } />
 
-          {/* Keep individual routes so direct URLs still work */}
           <Route path="/about"             element={<About />} />
           <Route path="/education"         element={<Education />} />
           <Route path="/experience"        element={<Experience />} />
