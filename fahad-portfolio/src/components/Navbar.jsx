@@ -53,7 +53,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Hamburger */}
         <button
           className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -63,7 +62,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <div className={`navbar__mobile ${menuOpen ? 'navbar__mobile--open' : ''}`}>
         {navLinks.map((link) => (
           <Link
