@@ -21,9 +21,9 @@
 .navbar__inner {
   max-width: 1300px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navbar__logo {
@@ -57,6 +57,7 @@
   list-style: none;
   gap: 0.2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar__link {

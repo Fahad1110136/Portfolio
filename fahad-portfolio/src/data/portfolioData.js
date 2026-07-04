@@ -1,6 +1,6 @@
 export const personal = {
   name: "Muhammad Fahad Idrees",
-  title: "Computer Science Student - Full Stack Developer | C++ / C / Python Programmer | AI & ML Engineer",
+  title: "Computer Science @ FAST NUCES | Full Stack Developer | C++ / C / Python Programmer | AI & ML Engineer",
   subtitle: "Systems Programming · Full Stack · AI & ML",
   tagline: "Engineering scalable solutions at the intersection of systems thinking and modern AI.",
   email: "fahadidrees1110136@gmail.com",
@@ -8,7 +8,7 @@ export const personal = {
   location: "Samanabad, Lahore, Pakistan",
   github: "https://github.com/Fahad1110136",
   linkedin: "https://www.linkedin.com/in/fahadi-idrees",
-  about: `I am a Computer Science undergraduate at FAST-NUCES, Lahore, driven by a genuine passion for building things that matter — whether that is a low-level x86 maze game running on raw BIOS interrupts or a full-stack AI-powered crypto intelligence platform. My work spans systems programming, full-stack web development, and applied machine learning, underpinned by a rigorous grounding in data structures, algorithms, and design patterns. I thrive at the boundary between theory and practice, translating complex algorithmic challenges into clean, production-ready software. Currently sharpening my expertise in AI-integrated systems and scalable architectures while pursuing competitive programming as a discipline of thought.`,
+  about: `I am a results-driven Computer Science undergraduate at FAST-NUCES, Lahore, with a strong analytical mindset and a genuine curiosity for solving real world problems through technology. I bring together a systems-level understanding of computing with a practical, product oriented approach to software development, allowing me to move comfortably between low level technical challenges and high level design decisions. I am detail oriented and disciplined in my work, with a consistent focus on writing clean, maintainable, and scalable solutions rather than quick fixes. Collaborative by nature, I value clear communication and thorough documentation, and I take ownership of my work from planning through execution. I approach challenges with patience and persistence, qualities sharpened through competitive programming, and I am continually motivated to expand my expertise, particularly in the evolving field of artificial intelligence. Outside of academics, I balance my technical pursuits with outdoor adventures and team sports, which keep me grounded and reinforce my appreciation for teamwork and resilience.`,
 };
 
 export const education = [

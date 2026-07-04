@@ -19,15 +19,16 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/education', label: 'Education' },
+    //{ path: '/about', label: 'About' },
+    //{ path: '/education', label: 'Education' },
     { path: '/experience', label: 'Experience' },
     { path: '/services', label: 'Services'},
-    { path: '/academic-projects', label: 'Academic Projects' },
-    { path: '/personal-projects', label: 'Personal Projects' },
+    { path: '/academic-projects', label: 'Projects' },
+    //{ path: '/academic-projects', label: 'Academic Projects' },
+    //{ path: '/personal-projects', label: 'Personal Projects' },
     { path: '/skills', label: 'Skills' },
-    { path: '/achievements', label: 'Achievements' },
-    { path: '/contact', label: 'Contact' },
+    //{ path: '/achievements', label: 'Achievements' },
+    //{ path: '/contact', label: 'Contact' },
   ];
 
   return (
