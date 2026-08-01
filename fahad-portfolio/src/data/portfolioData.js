@@ -13,15 +13,15 @@ export const personal = {
 
 export const education = [
   {
-    institution: "FAST-NUCES, Lahore",
-    degree: "BS Computer Science",
-    period: "2023 – 2027 (Expected)",
+    institution: "FAST National University of Computer and Emerging Sciences, Lahore",
+    degree: "Bachelors of Computer Science",
+    period: "2023 – 2027 (Expected",
     icon: "🎓",
     description: "Pursuing a rigorous undergraduate programme with focus on systems programming, algorithms, AI/ML, and software engineering fundamentals.",
   },
   {
     institution: "Government College University, Lahore",
-    degree: "FSc Pre-Engineering",
+    degree: "FSc Pre Engineering",
     period: "2021 – 2023",
     icon: "📐",
     description: "Completed pre-engineering studies with a strong foundation in mathematics and physics.",
@@ -36,19 +36,47 @@ export const education = [
 ];
 
 export const experience = [
+   {
+    title: "AI/ML Engineer",
+    subtitle: "Internship @ Stack360 · **Jul 2026 - Present**",
+    projects: []
+    // projects: [
+    //   {
+    //     description: "",
+    //     tech: ["Django, Python, Pytorch, Tensorflow, LangChain, LLMs, RAG, Faiss, ChromaDB"],
+    //     github: "https://github.com/Fahad1110136/",
+    //     icon: "",
+    //     color: "",
+    //   },
+    // ],
+  },
   {
     title: "Full Stack Developer",
-    subtitle: "Internship @ Optimus Automate · **June 2026 - July 2026**",
+    subtitle: "Internship @ NeuroFive Solutions · **Jul 2026 - Present**",
+    projects: []
+    // projects: [
+    //   {
+    //     description: "",
+    //     tech: ["HTML5, CSS3, JavaScript, React.js, Tailwind CSS, Node.js, Express.js, JSON"],
+    //     github: "https://github.com/Fahad1110136/",
+    //     icon: "",
+    //     color: "",
+    //   },
+    // ],
+  },
+  {
+    title: "Full Stack Developer",
+    subtitle: "Internship @ Optimus Automate · **Jun 2026 - Jul 2026**",
     projects: [
       {
-        description: "**NexCart** -- A multi-category e-commerce web app engineered a complete online store covering product browsing with search, sorting, and filtering, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with cancellation and transactional email notifications, user profiles with wishlist, and a full admin panel for product and order management. Implements a Three.js 3D animated hero and Framer Motion page transitions.",
+        description: "**NexCart** -- A multi-category e-commerce web app engineered a complete online store covering product browsing, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with email notifications, user profiles with wishlist, and a full admin panel.",
         tech: ["React.js", "Vite", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Google OAuth", "Stripe", "Tailwind CSS", "Cloudinary"],
         github: "https://github.com/Fahad1110136/NexCart",
         icon: "🛒",
         color: "#6366f1",
       },
       {
-        description: "**PlanIT** -- A Trello-style project management app built with React and Node.js. Organize work into boards, lists, and cards with drag-and-drop (dnd-kit), invite teammates through dashboard, assign members and discuss tasks through comments — all syncing live across clients via Socket.io. Features a PostgreSQL database via Prisma ORM on Neon and a custom landing page with a signature sketch-to-card animation and 3D feature cards.",
+        description: "**PlanIT** -- A Trello-style project management app built with React and Node.js. Organize work into boards, lists, and cards with drag-and-drop, invite teammates, assign members and discuss through comments. Features a PostgreSQL database via Prisma ORM on Neon and a custom landing page.",
         tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Socket.io", "JWT", "Tailwind CSS", "dnd-kit", "Vite"],
         github: "https://github.com/Fahad1110136/PlanIt",
         icon: "📋",
@@ -61,7 +89,7 @@ export const experience = [
     subtitle: "Freelauncer @ Upwork · **June 2025 - Aug 2025**",
     projects: [
       {
-        description: "**EliteDigital** -- Designed and engineered a fully responsive digital marketing agency website from the ground up using pure HTML5 and CSS3 — zero frameworks, pure craft. Delivered a conversion focused landing page featuring service offerings, client value propositions, and a polished contact section. Implemented responsive layouts using CSS Grid and Flexbox, smooth navigational transitions, and strategically placed calls-to-action.",
+        description: "**EliteDigital** -- Designed and engineered a fully responsive digital marketing agency website using pure HTML5 and CSS3. Delivered a conversion focused landing page featuring service offerings, client value propositions, a polished contact section and strategically placed calls-to-action.",
         tech: ["HTML5", "CSS3", "CSS Grid", "Flexbox", "Responsive Design"],
         github: "https://github.com/Fahad1110136/EliteDigital_Frontend",
         icon: "💼",
@@ -209,11 +237,11 @@ export const personalProjects = [
 ];
 
 export const skills = {
-  "Languages": ["C++", "C", "Python", "SQL", "Java", "HTML", "CSS"],
-  "Web Development": ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Node.js", "Express.js", "REST & FAST APIs", "PostgreSQL", "SQLite"],
-  "Technical": ["Data Structures & Algorithms", "OOP", "Design Patterns", "Operating Systems", "Computer Networks", "x86 Assembly", "DBMS", "AI"],
-  "Data & AI/ML": ["NumPy", "Pandas", "Matplotlib", "Keras", "Sci-kit learn", "Tensorflow", "Machine Learning", "Model Training", "AI-based Design"],
-  "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "MySQL", "Firebase", "MongoDB", "ChromaDB", "Prisma", "Streamlit", "Vite"],
+  "Languages": ["C++", "C", "Python", "SQL", "TypeScript", "Java", "HTML", "CSS"],
+  "Web Development": ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Node.js", "Express.js", "REST & FAST APIs", "PostgreSQL", "SQLite", "Angular.js", "MongoDB", "Prisma", "Django"],
+  "Technical": ["Data Structures & Algorithms", "OOP", "Design Patterns", "Operating Systems", "Computer Networks", "x86 Assembly", "DBMS", "AI", "ML"],
+  "Data & AI/ML": ["NumPy", "Pandas", "Matplotlib", "Keras", "Sci-kit learn", "Tensorflow", "Machine Learning", "Model Training", "PyTorch", "Faiss", "ChromaDB", "LangChain"],
+  "Tools & Platforms": ["Git", "GitHub", "VS Code", "Linux", "Postman", "Firebase", "Cursor AI", "Anti Gravity", "Streamlit", "Vite"],
 };
 
 export const achievements = [
