@@ -91,7 +91,7 @@ const Home = () => {
 
               <div className="home__stats animate-in" style={{ animationDelay: '0.8s' }}>
                 <div className="home__stat">
-                  <span className="home__stat-num">10+</span>
+                  <span className="home__stat-num">11+</span>
                   <span className="home__stat-label">Projects</span>
                 </div>
                 <div className="home__stat-divider" />

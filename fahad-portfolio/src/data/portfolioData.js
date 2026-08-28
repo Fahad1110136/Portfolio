@@ -8,7 +8,7 @@ export const personal = {
   location: "Samanabad, Lahore, Pakistan",
   github: "https://github.com/Fahad1110136",
   linkedin: "https://www.linkedin.com/in/fahadi-idrees",
-  about: `I am a results-driven Computer Science undergraduate at FAST-NUCES, Lahore, with a strong analytical mindset and a genuine curiosity for solving real world problems through technology. I bring together a systems-level understanding of computing with a practical, product oriented approach to software development, allowing me to move comfortably between low level technical challenges and high level design decisions. I am detail oriented and disciplined in my work, with a consistent focus on writing clean, maintainable, and scalable solutions rather than quick fixes. Collaborative by nature, I value clear communication and thorough documentation, and I take ownership of my work from planning through execution. I approach challenges with patience and persistence, qualities sharpened through competitive programming, and I am continually motivated to expand my expertise, particularly in the evolving field of artificial intelligence. Outside of academics, I balance my technical pursuits with outdoor adventures and team sports, which keep me grounded and reinforce my appreciation for teamwork and resilience.`,
+  about: `I am a results driven senior Computer Science undergraduate at FAST-NUCES, Lahore, with a strong analytical mindset and a genuine curiosity for solving real world problems through technology. I bring together a systems-level understanding of computing with a practical, product oriented approach to software development, allowing me to move comfortably between low level technical challenges and high level design decisions. I am detail oriented and disciplined in my work, with a consistent focus on writing clean, maintainable, and scalable solutions rather than quick fixes. Collaborative by nature, I value clear communication and thorough documentation, and I take ownership of my work from planning through execution. I approach challenges with patience and persistence, qualities sharpened through competitive programming, and I am continually motivated to expand my expertise, particularly in the evolving field of artificial intelligence. Outside of academics, I balance my technical pursuits with outdoor adventures and team sports, which keep me grounded and reinforce my appreciation for teamwork and resilience.`,
 };
 
 export const education = [
@@ -37,46 +37,55 @@ export const education = [
 
 export const experience = [
    {
-    title: "AI/ML Engineer",
-    subtitle: "Internship @ Stack360 · **Jul 2026 - Present**",
-    projects: []
-    // projects: [
-    //   {
-    //     description: "",
-    //     tech: ["Django, Python, Pytorch, Tensorflow, LangChain, LLMs, RAG, Faiss, ChromaDB"],
-    //     github: "https://github.com/Fahad1110136/",
-    //     icon: "",
-    //     color: "",
-    //   },
-    // ],
+    title: "AI/ML Engineer Intern",
+    subtitle: "Internship @ Stack360 · **Jul 2026 - Aug 2026**",
+    projects: [
+      {
+        description: "During this Internship tenure, I had a privilege to work on end-to-end AI system progressing from Django foundations to intelligent applications. Covering ML/DL model training, a real-time eye tracking via CNN, LangChain & langGraph chatbots with RAG (FAISS/ChromaDB) for PDF Q&A, hybrid search (cross encoder re-ranking), a multilingual Streamlit app with ML trained model **(Arabic Chatbot)**, and audio-enabled chat via WhisperX/Piper for audio transcription and audio-to-speech conversion **(Audio-n-Speech)**",
+        tech: ["Python", "Django", "PyTorch", "TensorFlow", "Scikit-learn", "LangChain", "LangGraph", "Hugging Face", "Groq API", "FAISS", "ChromaDB", "Streamlit", "WhisperX", "PySound", "Piper", "Ollama"],
+        github: "https://github.com/Fahad1110136/ArabicChat",
+        icon: "🧠",
+        color: "#8B5CF6",
+      },
+    ],
   },
   {
-    title: "Full Stack Developer",
-    subtitle: "Internship @ NeuroFive Solutions · **Jul 2026 - Present**",
-    projects: []
-    // projects: [
-    //   {
-    //     description: "",
-    //     tech: ["HTML5, CSS3, JavaScript, React.js, Tailwind CSS, Node.js, Express.js, JSON"],
-    //     github: "https://github.com/Fahad1110136/",
-    //     icon: "",
-    //     color: "",
-    //   },
-    // ],
+    title: "Full Stack Developer Intern",
+    subtitle: "Internship @ NeuroFive Solutions · **Jul 2026 - Aug 2026**",
+    projects: [
+      {
+        description: "In my internship period as Full Stack Developer, I built **Canopy** -- A carbon emissions tracking platform built for companies to monitor & report environmental impact continuously instead of scrambling spread sheets once a year. Teams invite members, log Scope emissions reports, evidence uploads, role-based access, facility management and analytics board.",
+        tech: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Three.js",
+        "Node.js",
+        "Express",
+        "MongoDB Atlas",
+        "JWT",
+        "Cloudinary",
+        "Vercel",
+      ],
+        github: "https://github.com/Fahad1110136/Canopy",
+        icon: "🌱",
+        color: "#059669",
+      },
+    ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer Intern",
     subtitle: "Internship @ Optimus Automate · **Jun 2026 - Jul 2026**",
     projects: [
       {
-        description: "**NexCart** -- A multi-category e-commerce web app engineered a complete online store covering product browsing, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with email notifications, user profiles with wishlist, and a full admin panel.",
+        description: "As a Full Stack Intern, I worked on two projects NexCart (An E-commerce Website) and PlanIt (A Project Management Tool). **NexCart** -- A multi-category e-commerce web app engineered a complete online store covering product browsing, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with email notifications, user profiles with wishlist, and a full admin panel.",
         tech: ["React.js", "Vite", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Google OAuth", "Stripe", "Tailwind CSS", "Cloudinary"],
         github: "https://github.com/Fahad1110136/NexCart",
         icon: "🛒",
         color: "#6366f1",
       },
       {
-        description: "**PlanIT** -- A Trello-style project management app built with React and Node.js. Organize work into boards, lists, and cards with drag-and-drop, invite teammates, assign members and discuss through comments. Features a PostgreSQL database via Prisma ORM on Neon and a custom landing page.",
+        description: "Introducing my second project in this Internship tenure, **PlanIT** -- A Trello-style project management app built with React and Node.js. Organize work into boards, lists, and cards with drag-and-drop, invite teammates, assign members and discuss through comments. Features a PostgreSQL database via Prisma ORM on Neon and a custom landing page.",
         tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Socket.io", "JWT", "Tailwind CSS", "dnd-kit", "Vite"],
         github: "https://github.com/Fahad1110136/PlanIt",
         icon: "📋",
@@ -85,11 +94,11 @@ export const experience = [
     ],
   },
   {
-    title: "Frontend Developer",
+    title: "Freelaunce Frontend Developer",
     subtitle: "Freelauncer @ Upwork · **June 2025 - Aug 2025**",
     projects: [
       {
-        description: "**EliteDigital** -- Designed and engineered a fully responsive digital marketing agency website using pure HTML5 and CSS3. Delivered a conversion focused landing page featuring service offerings, client value propositions, a polished contact section and strategically placed calls-to-action.",
+        description: "Delivering a project as a Freelauncer called **EliteDigital** -- Designed and engineered a fully responsive digital marketing agency website using pure HTML5 and CSS3. Delivered a conversion focused landing page featuring service offerings, client value propositions, a polished contact section and strategically placed calls-to-action.",
         tech: ["HTML5", "CSS3", "CSS Grid", "Flexbox", "Responsive Design"],
         github: "https://github.com/Fahad1110136/EliteDigital_Frontend",
         icon: "💼",
@@ -169,11 +178,35 @@ export const academicProjects = [
 
 export const personalProjects = [
   {
+    title: "Canopy — Monitor Carbon Emissions",
+    subtitle: "Full stack · Live API · Cloud Storage",
+  projects: [
+      {
+         description: "A carbon emissions tracking platform built for companies to monitor and report their environmental impact continuously instead of scrambling once a year. Teams register a company, invite members, log Scope 1/2/3 emissions reports, evidence uploads instead of scattered spreadsheets. Built JWT auth with email verification, role-based access, facility management, analytics dashboard, and a serverless-safe architecture.",
+        tech: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Three.js",
+        "Node.js",
+        "Express",
+        "MongoDB Atlas",
+        "JWT",
+        "Cloudinary",
+        "Vercel",
+      ],
+        github: "https://github.com/Fahad1110136/Canopy",
+        icon: "🌱",
+        color: "#059669",
+      },
+    ],
+  },
+  {
     title: "AI Anomaly Detector & Learning System",
     subtitle: "AI Safety · ChromaDB · LLM",
     projects: [
       {
-        description: "A self evolving, human-in-the-loop AI safety platform to detect, mitigate, and learn from AI misbehaviour. Implements semantis learning using ChromaDB vector embeddings to block malicious prompts based on prior human decisions — catching attacks that conventional regex patterns miss. Features intent classification via Llama-3.1-8B, real-time A/B comparison, hallucination detection, and a risk aggregation router. Optimised with scalar quantization and Groq/Cerebras LPU inference.",
+        description: "A self evolving, human-in-the-loop AI safety platform to detect, mitigate, and learn from AI misbehaviour. Implements semantics learning (ChromaDB embeddings) to block malicious prompts based on prior human decisions — catching attacks that conventional regex pattern miss. Features intent classification (Llama-3.1-8B), real-time A/B comparison, hallucination detection, and a risk aggregation router. Optimised with scalar quantization and Groq LPU inference.",
         tech: ["Python", "ChromaDB", "Llama-3.1-8B", "HNSW Indexing", "SQLite", "Streamlit", "Groq", "Cerebras"],
         github: "https://github.com/Fahad1110136/AI-AnamolyDetector",
         icon: "🛡️",
@@ -196,11 +229,11 @@ export const personalProjects = [
     ],
   },
   {
-    title: "NexCart — Digital E ommerce Website",
+    title: "NexCart — Digital E Commerce Website",
     subtitle: "Full Stack · E-Commerce · MERN",
     projects: [
       {
-        description: "A multi-category e-commerce web app engineered a complete online store covering product browsing with search, sorting, and filtering, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with cancellation and transactional email notifications, user profiles with wishlist, and a full admin panel for product and order management. Implements a Three.js 3D animated hero and Framer Motion page transitions.",
+        description: "A multi-category e-commerce web app engineered a complete online store covering product browsing with search, sorting, and filtering, Google OAuth and JWT authentication, shopping cart, Stripe ready checkouts, order management with cancellation & transactional email notifications, user profiles with wishlist, and admin panel for product & order management. Implements a Three.js 3D animated and Framer Motion page transitions.",
         tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Google OAuth", "Stripe", "Three.js", "Tailwind CSS", "Cloudinary"],
         github: "https://github.com/Fahad1110136/NexCart",
         icon: "🛒",
